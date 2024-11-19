@@ -25,7 +25,7 @@ interface EarlyUpgraderMemory {
 
 export const earlyUpgrader: UpgraderBase<EarlyUpgraderHeap, EarlyUpgraderMemory> = {
     bodyParts() {
-        return [MOVE, MOVE, WORK, CARRY];
+        return [MOVE, WORK, CARRY];
     },
 
     initHeap() {
