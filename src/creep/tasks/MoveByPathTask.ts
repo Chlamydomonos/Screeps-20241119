@@ -7,6 +7,11 @@ export enum MoveFailure {
     UNKNOWN,
 }
 
+/**
+ * # 根据路径移动
+ *
+ * 在此任务下，creep根据路径移动。如果creep被障碍物阻挡的时间超过`stuckTimeout`或者不在指定路径上，任务失败。
+ */
 export class MoveByPathTask extends CreepTask<MoveFailure> {
     private hasSucceeded = false;
     private hasFailed = false;

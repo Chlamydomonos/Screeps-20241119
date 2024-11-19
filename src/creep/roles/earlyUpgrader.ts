@@ -23,6 +23,11 @@ interface EarlyUpgraderMemory {
     spawnName?: string;
 }
 
+/**
+ * # 早期升级者
+ *
+ * 早期升级者的行为：从制造它的spawn取得能量，并且前往`upgradingPoint`旗帜的位置升级房间控制器。
+ */
 export const earlyUpgrader: UpgraderBase<EarlyUpgraderHeap, EarlyUpgraderMemory> = {
     bodyParts() {
         return [MOVE, WORK, CARRY];

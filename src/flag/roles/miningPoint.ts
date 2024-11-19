@@ -12,6 +12,11 @@ interface MiningPointMemory {
     miningDirection?: DirectionConstant;
 }
 
+/**
+ * # 采矿点位
+ *
+ * 能量的采集点位。会自动向spawn申请一个harvester来采矿。
+ */
 export const miningPoint: FlagRole<MiningPointHeap, MiningPointMemory> = {
     initHeap() {
         return {};

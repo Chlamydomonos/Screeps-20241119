@@ -11,6 +11,11 @@ interface UpgradePointMemory {
     creepName?: string;
 }
 
+/**
+ * # 升级点位
+ *
+ * 房间控制器升级点位。会自动向spawn申请一个upgrader来升级。
+ */
 export const upgradingPoint: FlagRole<UpgradePointHeap, UpgradePointMemory> = {
     initHeap() {
         return {};

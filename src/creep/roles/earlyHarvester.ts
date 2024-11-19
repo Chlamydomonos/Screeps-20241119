@@ -23,6 +23,11 @@ interface EarlyHarvesterMemory {
     spawnName?: string;
 }
 
+/**
+ * # 早期采矿者
+ *
+ * 早期采矿者的行为：移动到`miningPoint`旗帜的位置采集能量，并且送回制造它的spawn。
+ */
 export const earlyHarvester: HarvesterBase<EarlyHarvesterHeap, EarlyHarvesterMemory> = {
     bodyParts() {
         return [MOVE, WORK, WORK, CARRY];
